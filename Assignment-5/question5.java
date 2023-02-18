@@ -18,7 +18,7 @@ public class question5 {
         while(true){
             switch(choice){
                 case 1:{
-                    System.out.println("Withdraw Cash");
+                    System.out.println("Enter the Withdrawl Amount");
                     double withdraw=sc.nextDouble();
                     if((balance-withdraw)<=0){
                         System.out.println("Insufficient Balance");
@@ -29,9 +29,10 @@ public class question5 {
                 }
                 case 2:
                 {
-                    System.out.println("Deposit Cash"); 
+                    System.out.println("Enter the Deposit Amount"); 
                     double amount=sc.nextDouble();
                     balance=amount+balance;
+                    System.out.println("Amount has been Deposited Successfully ;)");
                     break;
                 }
                 case 3:
@@ -52,8 +53,5 @@ public class question5 {
             new question5().showOptions();
             choice=sc.nextInt();
         }
-        
-
     }
-    
 }
