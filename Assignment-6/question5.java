@@ -14,7 +14,9 @@ public class question5 {
         int x=new Scanner(System.in).nextInt();
         Number n[];
         n=new Number[x];
-        for(int i=0;i<)
+        for(int i=0;i<n.length;i++){
+            
+        }
 
     }
 
