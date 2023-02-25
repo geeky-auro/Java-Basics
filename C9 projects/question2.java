@@ -6,6 +6,7 @@ public class question2
 	Scanner input=new Scanner(System.in);
 	System.out.println("Enter number days:-");
 	int dt=input.nextInt();
+	input.close();
 	double totamt=0.0;
 	System.out.println("Enetr the amount:-");
 	double amt=input.nextDouble();

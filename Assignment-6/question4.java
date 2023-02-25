@@ -11,12 +11,13 @@ public class question4 {
     s=new Student[n];
     for(int i=0;i<s.length;i++){
         System.out.println("Enter Detail of Student "+(i+1));
+        s[i]=new Student();
         s[i].input();
     }
     for(int i=0;i<s.length;i++){
         s[i].display();
     }
-    double lowCGPA=0;int index=0;
+    double lowCGPA=s[0].CGPA;int index=0;
     for(int i=0;i<s.length;i++){
         if(s[i].CGPA<lowCGPA){
             lowCGPA=s[i].CGPA;

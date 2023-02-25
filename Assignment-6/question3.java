@@ -15,6 +15,7 @@ public static void main(String[] args) {
 class Pair{
     int perimeter;
     int area;
+    
 }
 
 
@@ -24,7 +25,9 @@ class Rectangle{
     Pair ob=new Pair();
     void input(){
         Scanner sc=new Scanner(System.in);
+        System.out.println("Enter Length");
         length=sc.nextInt();
+        System.out.println("Enter Breadth");
         breadth=sc.nextInt();
     }
     
@@ -32,11 +35,10 @@ class Rectangle{
         ob.perimeter=2*(length+breadth);
         ob.area=length*breadth;
     }
-    int perimeter(){
-        return (length*breadth);
-    }
+
     
     void display(){
+        Calculate();
         System.out.println("Perimeter of the Rectangle "+ ob.perimeter);
         System.out.println("Area of the Rectangle "+ ob.area);
     }

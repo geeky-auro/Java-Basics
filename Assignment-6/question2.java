@@ -5,7 +5,7 @@ public class question2 {
         System.out.println("Area of Square "+(side * side * side));
     }
     void area(int breadth,int height){
-        System.out.println("Area of Triangle "+((1/2)*breadth*height));
+        System.out.println("Area of Triangle "+((1/2.0)*breadth*height));
     }
     void area(String radius){
         int radius1=Integer.parseInt(radius);
