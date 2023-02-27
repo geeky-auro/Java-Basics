@@ -32,8 +32,8 @@ public class Stream {
 
      public static void main(String[] args)throws Exception {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter Characters ");
-        int n=Integer.parseInt(br.readLine());
-        System.out.println("Entered No is "+n);
+      //   System.out.println("Enter Characters ");
+      //   int n=Integer.parseInt(br.readLine());
+      //   System.out.println("Entered No is "+n);
      }
 }
