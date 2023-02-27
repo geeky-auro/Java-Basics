@@ -11,7 +11,7 @@ public class Stream {
      * Web Page
      * Input Device (Keyboard,Mouse)
      * 
-     * Include java.io package   use I/O streams
+     * Include java.io package use I/O streams
      * Note Streams perform I/O in Java
      *  An abstraction that either produces or consumes information
      * LINKED TO A PHYSICAL DEVICE BY THE JAVA I/0 SYSTEM
