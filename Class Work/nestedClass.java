@@ -22,6 +22,22 @@
  *  
  */
 
+/**
+ * Age
+ */
+interface Age {
+
+    int x=21;
+    void getAge();
+}
+
+class MyClass implements Age{
+    @Override
+    public void getAge(){
+        System.out.println("Age is "+ x);
+    }
+}
+
 public class nestedClass {
     /**
      * InnernestedClass
@@ -72,6 +88,19 @@ public class nestedClass {
         System.out.println("Static Inner Y (Int) Accessed using Object"+sc.inner_y);
         // Accessing of Local Inner Class 
         nestedclass.getValue();
+
+        /* Anonymous Class */
+     /* It has no name so object cannot be created separately
+      * Constructor cannot be called and object cannot be called later
+        It has only one object 
+      */
+      Age obj1=new Age() {
+        @Override
+        public void getAge(){
+            System.out.println("Age is "+x);
+        }
+      };
+      obj1.getAge();
     }
 
 
@@ -144,5 +173,6 @@ public class nestedClass {
         System.out.println("Local Inner Class Reminder :"+l.getReminder());    
 
      }
+     
 
 }
