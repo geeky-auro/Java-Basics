@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.InputStreamReader;
 
 public class Stream {
@@ -10,7 +11,7 @@ public class Stream {
      * Another Computer on Network
      * Web Page
      * Input Device (Keyboard,Mouse)
-     * 
+      
      * Include java.io package use I/O streams
      * Note Streams perform I/O in Java
      *  An abstraction that either produces or consumes information
@@ -31,9 +32,24 @@ public class Stream {
      */
 
      public static void main(String[] args)throws Exception {
-        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+      // BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
       //   System.out.println("Enter Characters ");
       //   int n=Integer.parseInt(br.readLine());
       //   System.out.println("Entered No is "+n);
-     }
+      /*
+       * Below is the Reading of Characters from a file ;-|
+       */
+      BufferedReader br =new BufferedReader(new FileReader("myfile.txt"));
+      char ch[]=new char[100];
+      if(br.ready()){
+        System.out.println(br.readLine());
+        br.read(ch);
+        for(int i=0;i<ch.length;i++){
+          System.out.print(ch[i]);
+        }
+        // br.reset();
+      }
+      System.out.println();
+
+    }
 }
