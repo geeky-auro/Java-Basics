@@ -5,7 +5,7 @@ public class question3 {
         RedmiPhone r=new RedmiPhone();
         r.displayCamera();
         r.displayTouchScreen();
-        r.fingerPrint();
+        r.turboCharge();
 
         SamsungPhone s=new SamsungPhone();
         s.displayCamera();
@@ -15,7 +15,7 @@ public class question3 {
         NokiaPhone n=new NokiaPhone();
         n.displayCamera();;
         n.displayTouchScreen();
-        n.turboCharge();
+        n.fingerPrint();
     }
 }
 
@@ -32,7 +32,7 @@ interface AdditionalProperties{
     void fingerPrint();
 }
 
-class RedmiPhone extends MobilePhone implements AdditionalProperties{
+class RedmiPhone extends MobilePhone {
     @Override
     void displayCamera() {
         // TODO Auto-generated method stub
@@ -45,10 +45,8 @@ class RedmiPhone extends MobilePhone implements AdditionalProperties{
         System.out.println("Redmi Phone Touch Screen");
     }
 
-    @Override
-    public void fingerPrint() {
-        // TODO Auto-generated method stub
-        System.out.println("Redmi phone Fingerprint");    
+    void turboCharge(){
+        System.out.println("Nokia Phone Turbo Charge");
     }
 }
 
@@ -68,11 +66,11 @@ class SamsungPhone extends MobilePhone implements AdditionalProperties{
     @Override
     public void fingerPrint() {
         // TODO Auto-generated method stub
-        System.out.println("Samsung Touch Screen");
+        System.out.println("Samsung Finger Print");
     }
 }
 
-class NokiaPhone extends MobilePhone{
+class NokiaPhone extends MobilePhone implements AdditionalProperties{
     @Override
     void displayCamera() {
         // TODO Auto-generated method stub
@@ -85,7 +83,9 @@ class NokiaPhone extends MobilePhone{
         System.out.println("Nokia Phone Touch Screen");
     }
 
-    void turboCharge(){
-        System.out.println("Nokia Phone Turbo Charge");
+    @Override
+    public void fingerPrint() {
+        System.out.println("Nokia Finger Print");
     }
+    
 }
