@@ -13,7 +13,7 @@ public class question3 {
         s.fingerPrint();
 
         NokiaPhone n=new NokiaPhone();
-        n.displayCamera();;
+        n.displayCamera();
         n.displayTouchScreen();
         n.fingerPrint();
     }
