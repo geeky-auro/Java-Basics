@@ -3,7 +3,7 @@ public class question4 {
         // Check for Anagram ;0
         String s1 = "anagram";
         String s2 = "nagaram";
-        Boolean contains=false;
+        Boolean contains=true;
         for(int i = 0; i < s1.length(); i++) {
             char ch=s1.charAt(i);
             int j=0;
@@ -17,6 +17,7 @@ public class question4 {
                 }
                 j++;
         }
+        System.out.println(s2);
         contains=isTrue;
         if(isTrue){
             continue;
