@@ -7,7 +7,7 @@ import commonTools.Phone;
  */
 public class question2 extends Phone{
     public static void main(String[] args) {
-        Phone phone = new Phone();
+       Phone phone = new Phone();
         phone.clickCamera();
         phone.play();
         phone.pause();
