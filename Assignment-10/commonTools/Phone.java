@@ -24,13 +24,13 @@ public class Phone implements cameraTools1,MusicPlayer {
 
     @Override
     public void recorderCamera() {
-        System.out.println();
+        System.out.println("Recording Camera");
         
     }
 
     @Override
     public void clickCamera() {
-        // TODO Auto-generated method stub
+        System.out.println("Clicking Camera");
         
     }
 }
