@@ -6,7 +6,6 @@ class NegativeNumberException extends Exception {
     //Store Message ;)
     String msg;
     NegativeNumberException(String msg) {
-
         super(msg);
         this.msg=msg;
     }
@@ -23,14 +22,14 @@ public class question1 {
 	    Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         try{
-            processInput(n);
+            new question1().processInput(n);
         }catch(NegativeNumberException ni){
             System.out.println("Exception Occoured"+ni.toString());
 
         }
 	}
 
-    static void processInput(int n) throws NegativeNumberException {
+     void processInput(int n) throws NegativeNumberException {
         if (n < 0) {
             throw new NegativeNumberException("Negative Number");
         }else{
