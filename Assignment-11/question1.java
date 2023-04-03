@@ -1,9 +1,9 @@
 //user-defined exception in java
 import java.util.*;
 
-//custom exception to validate login credentials
+//custom exception to check for negative numbers
 class NegativeNumberException extends Exception {
-    //member variable to store our custom message
+    //Store Message ;)
     String msg;
     NegativeNumberException(String msg) {
         //passing the parameter to the super class constructor
