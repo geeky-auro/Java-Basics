@@ -6,7 +6,7 @@ class NegativeNumberException extends Exception {
     //Store Message ;)
     String msg;
     NegativeNumberException(String msg) {
-        //passing the parameter to the super class constructor
+
         super(msg);
         this.msg=msg;
     }
@@ -22,16 +22,19 @@ public class question1 {
 	public static void main(String[] args) {
 	    Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-	    try {
-	        if(n<0){
-	            throw new NegativeNumberException("no such user with username - "+n);
-	        }else{
-                System.out.println("No Exception and Number is "+n);
-            }
-	    }
-	    catch(NegativeNumberException ex) {
-	        //calls override toString() method
-	        System.out.println(ex);
-	    }
+        try{
+            processInput(n);
+        }catch(NegativeNumberException ni){
+            System.out.println("Exception Occoured"+ni.toString());
+
+        }
 	}
+
+    static void processInput(int n) throws NegativeNumberException {
+        if (n < 0) {
+            throw new NegativeNumberException("Negative Number");
+        }else{
+            System.out.println("Positive Number");
+        }
+    }
 }

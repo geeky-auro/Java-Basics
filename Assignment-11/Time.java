@@ -1,0 +1,7 @@
+/**
+ * Time
+ */
+public class Time {
+
+    
+}
