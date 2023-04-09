@@ -4,10 +4,7 @@ import java.util.Scanner;
 public class question4 {
     public static void main(String[] args) {
         // Check for Anagram ;0
-        Scanner sc=new Scanner(System.in);
-        String str1=sc.nextLine();
-        String str2=sc.nextLine();
-        isAnagram(str1, str2);
+        isAnagram(args[0], args[1]);
     }
 
     static void isAnagram(String str1, String str2)   
