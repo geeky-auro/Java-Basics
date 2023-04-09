@@ -54,7 +54,7 @@ import java.util.*;
             }
 
             if(seconds>60 || seconds<0) {
-                throw new SecondException("Wrong Input Parameters for Minutes field ");
+                throw new SecondException("Wrong Input Parameters for Second field ");
             }else{
                 this.seconds=seconds;
             }            
