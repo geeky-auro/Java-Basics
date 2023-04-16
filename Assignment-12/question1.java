@@ -30,8 +30,7 @@ public class question1 {
             fr.close();
             fw.close();
              // Display message
-             System.out.println(
-                "File reading and writing both done");
+             System.out.println("File reading and writing both done");
         }catch(Exception e){
             System.out.println("There are some IOException");
         }  
