@@ -8,6 +8,7 @@ public class question4 {
         // Storing every character in the string
         str += (char)i;
         }
+        fr.close();
         String maxWord="";
         String tempWord="";
         for(int j=0;j<str.length();j++) {
